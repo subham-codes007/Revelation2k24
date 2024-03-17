@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Leaders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #800000;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            .team-member {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team-member">
+            <img src="leader1.jpg" alt="Team Leader 1">
+            <h3>John Doe</h3>
+        </div>
+        <div class="team-member">
+            <img src="leader2.jpg" alt="Team Leader 2">
+            <h3>Jane Smith</h3>
+        </div>
+        <div class="team-member">
+            <img src="leader3.jpg" alt="Team Leader 3">
+            <h3>Michael Johnson</h3>
+        </div>
+        <!-- Add more team members as needed -->
+    </div>
+</body>
+</html>
